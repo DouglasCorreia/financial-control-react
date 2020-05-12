@@ -1,0 +1,356 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #fafafa;
+  color: #333333;
+}
+
+/*
+  Boostrap Mixins and Variables are defined first.
+  Examples start at line 234.
+  Clearfix
+  For modern browsers
+  1. The space content is one way to avoid an Opera bug when the
+  contenteditable attribute is included anywhere else in the document.
+  Otherwise it causes space to appear at the top and bottom of elements
+  that are clearfixed.
+
+  2. The use of `table` rather than `block` is only necessary if using
+  `:before` to contain the top-margins of child elements.
+  Source: 
+*/
+/************************** Media queries breakpoints **************************/
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/************************** Grid system **************************/
+/* Number of columns in the grid. */
+/* Padding between columns. Gets divided in half for the left and right. */
+/************************** Centered container element **************************/
+/************************** Creates a row **************************/
+/* Generate the extra small columns */
+/* Generate the small columns */
+/* Generate the medium columns */
+/* Generate the large columns */
+/************************** Displays **************************/
+/************************** Alignment **************************/
+/* Vertical alignment */
+/* Horizontal alignment */
+/************************** Float **************************/
+/************************** Text Alignment **************************/
+.text-right {
+  text-align: right;
+}
+
+/************************** Text transform **************************/
+/* Table Responsive */
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  background-color: #c5c5c5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header:before, header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header .header__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+header .header__row:before, header .header__row:after {
+  content: " ";
+  display: table;
+}
+header .header__row:after {
+  clear: both;
+}
+
+.financial {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  margin-top: 30px;
+}
+.financial:before, .financial:after {
+  content: " ";
+  display: table;
+}
+.financial:after {
+  clear: both;
+}
+@media (min-width: 480px) {
+  .financial {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .financial {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .financial {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .financial {
+    max-width: 1200px;
+  }
+}
+.financial .financial__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.financial .financial__row:before, .financial .financial__row:after {
+  content: " ";
+  display: table;
+}
+.financial .financial__row:after {
+  clear: both;
+}
+.financial .financial__form__container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .financial .financial__form__container {
+    max-width: 41.6666666667%;
+    width: 41.6666666667%;
+  }
+}
+.financial .financial__form__container .financial__form_wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+}
+.financial .financial__form__container .financial__form_wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row:before, .financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row:after {
+  content: " ";
+  display: table;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row:after {
+  clear: both;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit {
+    max-width: 33.3333333333%;
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  .financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column input,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column select,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column option,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit input,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit select,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit option {
+  width: 100%;
+  padding: 10px;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column label,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit label {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 1em;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column input,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column select,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit input,
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit select {
+  margin-bottom: 25px;
+}
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column input[type=submit],
+.financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit input[type=submit] {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1em;
+}
+@media (min-width: 768px) {
+  .financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit {
+    margin-left: 66.6666666667%;
+  }
+}
+@media (min-width: 992px) {
+  .financial .financial__form__container .financial__form_wrapper .financial__form .financial__form__row .financial__form__column--submit {
+    margin-left: 0%;
+  }
+}
+.financial .financial__receipt__container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .financial .financial__receipt__container {
+    max-width: 58.3333333333%;
+    width: 58.3333333333%;
+  }
+}
+.financial .financial__receipt__container .financial__receipt__wrapper {
+  padding: 20px;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .receipt__title h2 {
+  text-align: center;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row:before, .financial .financial__receipt__container .financial__receipt__wrapper .content__row:after,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total:before,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total:after {
+  content: " ";
+  display: table;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row:after,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total:after {
+  clear: both;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column {
+  max-width: 50%;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column {
+    max-width: 50%;
+    width: 50%;
+  }
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column .content__title,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column .content__title {
+  font-weight: bold;
+  display: block;
+  font-size: 1em;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column .content__title span,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column .content__title span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column--profit,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column--profit {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column--profit,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column--profit {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column--profit span,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column--profit span {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column--profit .red,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column--profit .red {
+  color: #e53935;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row .content__column--profit .green,
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column--profit .green {
+  color: #43a047;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total {
+  margin-top: 3px;
+  padding-top: 8px;
+  position: relative;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total .content__column {
+  border-bottom: 0px;
+}
+.financial .financial__receipt__container .financial__receipt__wrapper .content__row--total:before {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: 0px;
+}
+
+@media (max-width: 767px) {
+  .financial .financial__form__container .financial__form_wrapper {
+    padding: 0px;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) and (max-width: 767px) {
+  .financial .financial__form__container .financial__form_wrapper h2 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .financial .financial__receipt__container .financial__receipt__wrapper {
+    margin-top: 30px;
+    padding-top: 0px;
+  }
+  .financial .financial__receipt__container .financial__receipt__wrapper .receipt__title h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+}
